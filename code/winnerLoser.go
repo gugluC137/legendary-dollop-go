@@ -9,15 +9,11 @@ func FindWinners(matches [][]int) [][]int {
 
 	for _, v := range matches {
 
-		if _, found0 := mapOfTeams[v[0]]; !found0 {
+		if mapOfTeams[v[0]] == 0 {
 			mapOfTeams[v[0]] = 0
 		}
 
-		if _, found1 := mapOfTeams[v[1]]; found1 {
-			mapOfTeams[v[1]]++
-		} else {
-			mapOfTeams[v[1]] = 1
-		}
+		mapOfTeams[v[1]]++
 	}
 
 	ans := make([][]int, 2)
