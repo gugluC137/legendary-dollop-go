@@ -1,6 +1,6 @@
 package code
 
-func sort012(arrP *[]int) {
+func Sort012(arrP *[]int) {
 	lengthOfArr := len(*arrP)
 	pos := [3]int{0, 0, lengthOfArr - 1}
 

@@ -2,7 +2,7 @@ package code
 
 import . "github.com/gugluC137/legendary-dollop-go/models"
 
-func mergeTwoLists(list1 *ListNode, list2 *ListNode) *ListNode {
+func MergeTwoLists(list1 *ListNode, list2 *ListNode) *ListNode {
 	if list1 == nil {
 		return list2
 	}

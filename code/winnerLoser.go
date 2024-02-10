@@ -4,7 +4,7 @@ import (
 	"slices"
 )
 
-func findWinners(matches [][]int) [][]int {
+func FindWinners(matches [][]int) [][]int {
 	mapOfTeams := make(map[int]int)
 
 	for _, v := range matches {
