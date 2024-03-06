@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	"github.com/gugluC137/legendary-dollop-go/code"
+	sort "github.com/gugluC137/legendary-dollop-go/code/customsort"
 )
 
 func main() {
@@ -15,4 +16,10 @@ func main() {
 
 	ans := code.FindWinners(matches)
 	fmt.Println(ans)
+
+	arr := []int{3, 4, 2, 1, 7, 0}
+	fmt.Println(arr)
+	arr = sort.SortFunc(arr, new(sort.Bubble))
+	fmt.Println(arr)
+
 }

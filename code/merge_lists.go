@@ -1,6 +1,8 @@
 package code
 
-import . "github.com/gugluC137/legendary-dollop-go/models"
+import "github.com/gugluC137/legendary-dollop-go/models"
+
+type ListNode = models.ListNode
 
 func MergeTwoLists(list1 *ListNode, list2 *ListNode) *ListNode {
 	if list1 == nil {
